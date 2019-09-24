@@ -1,0 +1,5 @@
+<%= form_with scope: :session, url: sessions_path, local: true do |f| %>
+  <%= f.text_field :name, required: true, placeholder: "username" %>
+  <%=f.password_field :password_digest, requred: true %>
+  <%= f.submit %>
+<%end%>

@@ -1,0 +1,20 @@
+
+  <h1><%=@user.name%></h1>
+
+
+<section>
+  <%@user.projects.each do |project|%>
+    <article class="project-lists">
+
+      <h2><%=project.title%></h2>
+      <p><%=project.goal%></p>
+
+    </article>
+  <%end%>
+
+  <%=link_to new_user_project_url(@user) do%>
+    <%end%>
+</section>
+<%=link_to "logout", logout_path%>
+
+</section>

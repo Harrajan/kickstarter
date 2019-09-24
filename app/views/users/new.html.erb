@@ -1,0 +1,5 @@
+<%= form_with model: @user, local: true do |f|%>
+  <%=f.text_field :name, required: true, placehoder:"username" %>
+  <%=f.password_field :password_digest, requred: true %>
+  <%=f.submit%>
+<%end%>
